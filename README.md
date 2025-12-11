@@ -1,6 +1,8 @@
 # PV-UNet for Solar Cell EL Image Reconstruction
 
-This repository contains training code for a reconstruction model (`Rec_model`) applied to solar cell electroluminescence (EL) images. The model is trained on masked input patches and supervised by the original clean images.
+This repository contains training code for a reconstruction model (`Rec_model`) applied to solar cell electroluminescence (EL) images. The code accompanies the paper **“Unsupervised and Few-Shot Segmentation in Photovoltaic Electroluminescence Images for Defects Detection via a Novel Enhanced Iterative Autoencoder with Simple Implementation.”** The implementation is still being organized and refined, so expect incremental updates. The model is trained on masked input patches and supervised by the original clean images.
+
+> 这是论文《Unsupervised and Few-Shot Segmentation in Photovoltaic Electroluminescence Images for Defects Detection via a Novel Enhanced Iterative Autoencoder with Simple Implementation》的官方代码仓库，当前仍在陆续整理和完善中。
 
 ## Features
 
