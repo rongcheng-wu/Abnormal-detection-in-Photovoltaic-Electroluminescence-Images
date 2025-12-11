@@ -1,0 +1,34 @@
+# config.yaml
+
+experiment_name: "pv_unet_solar_cell"
+
+data:
+  train_root: "solar_cell_EL_image/PVELAD/EL2021/othertypes/good/"
+  test_root: "solar_cell_EL_image/PVELAD/EL2021/test/JPEGImages/"
+  patch_size: 32
+  coverage: -1
+  mask_train: true
+  mask_test: false
+  rotate: false
+  batch_size: 32
+  num_workers: 8
+
+model:
+  checkpoint_dir: "checkpoints"
+  checkpoint_name: "PV_UNET.pth"
+  resume: true   # if true and checkpoint exists, load before training
+
+training:
+  num_epochs: 100
+  learning_rate: 0.0001
+  use_amp: true          # mixed precision (recommended on GPU)
+  log_interval: 50       # print loss every N batches
+  save_every_epoch: 1    # save checkpoint every N epochs
+
+loss:
+  l1_weight: 1.0
+  gradient_weight: 1.0
+
+visualization:
+  output_dir: "visualization"
+  batch_size: 1
